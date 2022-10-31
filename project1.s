@@ -36,3 +36,20 @@ jal characteradd
 
 lb $s1, 3($t0)
 jal characteradd 
+
+
+
+lb $s1, 4($t0)
+jal characteradd 
+
+lb $s1, 5($t0)
+jal characteradd
+
+
+
+
+
+
+
+
+
