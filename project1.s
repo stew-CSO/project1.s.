@@ -29,3 +29,10 @@ jal characteradd
 
 lb $s1, 1($t0)
 
+jal characteradd 
+
+lb $s1, 2($t0)
+jal characteradd 
+
+lb $s1, 3($t0)
+jal characteradd 
