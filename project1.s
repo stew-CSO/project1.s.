@@ -18,3 +18,14 @@ li $v0, 8
 la $a0, input
 li $a1, 11
 syscall
+
+
+move $t0, $a0 
+
+#load byte 
+
+lb $s1, 0($t0)
+jal characteradd 
+
+lb $s1, 1($t0)
+
