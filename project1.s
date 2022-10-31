@@ -50,6 +50,11 @@ jal characteradd
 lb $s1, 7($t0)
 jal characteradd 
 
+lb $s1, 8($t0)
+jal characteradd 
+
+lb $s1, 9($t0)
+jal characteradd 
 
 
 
