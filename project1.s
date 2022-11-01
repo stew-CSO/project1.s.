@@ -64,6 +64,22 @@ bgt $s1, 64, upperCaseChar
 bgt $s1, 47, num 
 
 
+addsloop:
+
+add $s2, $s1, $s2
+jr $ra.   
+
+
+lowerCaseChar:
+bgt $s1, 106, outOfBounds
+
+
+
+
+
+
+
+
 
 
 
