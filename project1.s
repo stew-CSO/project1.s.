@@ -68,7 +68,7 @@ bgt $s1, 47, num
 addsloop:
 
 add $s2, $s1, $s2
-jr $ra.   
+jr $ra   
 
 
 lowerCaseChar:
