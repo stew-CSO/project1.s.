@@ -76,10 +76,7 @@ sub $s1, $s1, 87
 j addsloop
 
 outOfBounds:
-li   $s1, 0
-j addsloop  
-
-
+jr $ra  
 
 
 
