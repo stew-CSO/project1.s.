@@ -57,6 +57,12 @@ lb $s1, 9($t0)
 jal characteradd 
 
 
+characteradd:
+
+bgt $s1, 96, lowerCaseChar
+bgt $s1, 64, upperCaseChar
+bgt $s1, 47, num 
+
 
 
 
