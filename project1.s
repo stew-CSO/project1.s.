@@ -96,7 +96,11 @@ addi $t1 , 3
 multu $s2, $t1 
 mfhi $t2
 mflo $t3
-add $a0, $t3, $t2 
+li $v0, 11
+li $a0, 10
+syscall
+
+add $a0, $t2, $t3
 
 
 li $v0, 1
