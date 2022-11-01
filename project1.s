@@ -78,7 +78,10 @@ j addsloop
 outOfBounds:
 jr $ra  
 
-
+upperCaseChar: 
+bgt $s1, 73, outOfBounds 
+sub $s1, $s1, 55
+j addsloop
 
 
 
