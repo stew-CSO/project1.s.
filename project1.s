@@ -98,6 +98,10 @@ mfhi $t2
 mflo $t3
 add $a0, $t1, $t2 
 
+
+li $v0, 1
+syscall 
+
 li $v0, 10 
 syscall 
 
