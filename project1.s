@@ -89,3 +89,17 @@ sub $s1, $s1, 48
 j addsloop 
 
 
+
+exit:
+addi $t1 , 3
+multu $s2, $t1 
+mfhi $t2
+mflo $t3
+
+
+
+
+
+
+
+
