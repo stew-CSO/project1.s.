@@ -56,6 +56,7 @@ jal characteradd
 lb $s1, 9($t0)
 jal characteradd 
 
+j exit 
 
 characteradd:
 
@@ -95,8 +96,10 @@ addi $t1 , 3
 multu $s2, $t1 
 mfhi $t2
 mflo $t3
+add $a0, $t1, $t2 
 
-
+li $v0, 10 
+syscall 
 
 
 
