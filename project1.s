@@ -6,7 +6,7 @@
 .data
 
 input: .space 11 
-enter: .asciiz 
+ 
 
 .text
 .globl main 
