@@ -72,7 +72,7 @@ jr $ra
 
 
 lowerCaseChar:
-bgt $s1, 104, outOfBounds
+bgt $s1, 114, outOfBounds
 sub $s1, $s1, 87
 j addsloop
 
@@ -80,12 +80,12 @@ outOfBounds:
 jr $ra  
 
 upperCaseChar: 
-bgt $s1, 71, outOfBounds 
+bgt $s1, 81, outOfBounds 
 sub $s1, $s1, 55
 j addsloop
 
 num:
-bgt $s1, 54, outOfBounds  
+bgt $s1, 64, outOfBounds  
 sub $s1, $s1, 48
 j addsloop 
 
