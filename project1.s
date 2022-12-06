@@ -86,7 +86,7 @@ j addsloop
 
 num:
 bgt $s1, 57, outOfBounds  
-sub $s1, $s1, 49
+sub $s1, $s1, 48
 j addsloop 
 
 
