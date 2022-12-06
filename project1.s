@@ -60,9 +60,9 @@ j exit
 
 characteradd:
 
-bgt $s1, 96, lowerCaseChar
-bgt $s1, 64, upperCaseChar
-bgt $s1, 47, num 
+bge $s1, 97, lowerCaseChar
+bge $s1, 65, upperCaseChar
+bge $s1, 48, num 
 
 
 addsloop:
