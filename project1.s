@@ -60,9 +60,9 @@ j exit
 
 characteradd:
 
-bge $s1, 97, lowerCaseChar
-bge $s1, 65, upperCaseChar
-bge $s1, 48, num 
+bgt $s1, 96, lowerCaseChar
+bgt $s1, 64, upperCaseChar
+bgt $s1, 47, num 
 
 
 addsloop:
@@ -72,7 +72,7 @@ jr $ra
 
 
 lowerCaseChar:
-bgt $s1, 115, outOfBounds
+bgt $s1, 114, outOfBounds
 sub $s1, $s1, 87
 j addsloop
 
@@ -85,8 +85,8 @@ sub $s1, $s1, 55
 j addsloop
 
 num:
-bgt $s1, 59, outOfBounds  
-sub $s1, $s1, 48
+bgt $s1, 57, outOfBounds  
+sub $s1, $s1, 49
 j addsloop 
 
 
